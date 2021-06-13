@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/main.cpp
+iostream
+-
+vector
+-
+iterator
+-
+cmath
+-
+random
+-
+stdio.h
+-
+math.h
+-
+climits
+-
+cstdlib
+-
+locale.h
+-
+cstring
+-
+ctime
+-
+bits/stdc++.h
+-
+algorithm
+-
+

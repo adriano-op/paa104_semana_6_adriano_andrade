@@ -1,0 +1,3 @@
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/CMakeFiles/semana6.dir

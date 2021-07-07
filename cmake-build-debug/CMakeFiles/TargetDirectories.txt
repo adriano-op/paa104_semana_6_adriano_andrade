@@ -1,3 +1,13 @@
 /media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/CMakeFiles/edit_cache.dir
 /media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/CMakeFiles/semana6.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/CMakeFiles/rebuild_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/CMakeFiles/edit_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/CMakeFiles/rebuild_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/CMakeFiles/edit_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/CMakeFiles/rebuild_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/CMakeFiles/edit_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/CMakeFiles/rebuild_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/CMakeFiles/edit_cache.dir
+/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/CMakeFiles/matplot.dir

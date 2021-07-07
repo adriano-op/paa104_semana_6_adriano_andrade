@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/semana6.dir/main.cpp.o -o semana6 
+/usr/bin/c++ -g CMakeFiles/semana6.dir/main.cpp.o -o semana6  matplotplusplus/source/matplot/libmatplot.a -lpthread matplotplusplus/source/3rd_party/libnodesoup.a -lstdc++fs 

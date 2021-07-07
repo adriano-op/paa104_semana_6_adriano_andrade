@@ -5,7 +5,7 @@
 		<Option title="semana6"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\matplotplusplus\;CMake Files\matplotplusplus\cmake\;CMake Files\matplotplusplus\source\;CMake Files\matplotplusplus\source\3rd_party\;CMake Files\matplotplusplus\source\matplot\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug"/>
@@ -44,6 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -67,6 +69,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -83,12 +87,407 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="nodesoup">
+				<Option output="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/libnodesoup.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 nodesoup"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nodesoup/fast">
+				<Option output="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/libnodesoup.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_USE_MATH_DEFINES"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 nodesoup/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/3rd_party/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matplot">
+				<Option output="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/libmatplot.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCXX_FILESYSTEM_IS_EXPERIMENTAL"/>
+					<Add option="-DMATPLOT_HAS_FBUFSIZE"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add option="-Dcimg_display=0"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/cimg"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 matplot"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matplot/fast">
+				<Option output="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/libmatplot.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCXX_FILESYSTEM_IS_EXPERIMENTAL"/>
+					<Add option="-DMATPLOT_HAS_FBUFSIZE"/>
+					<Add option="-DMATPLOT_BUILD_HIGH_RESOLUTION_WORLD_MAP"/>
+					<Add option="-Dcimg_display=0"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/cimg"/>
+					<Add directory="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 matplot/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/media/adriano/DATA/Google\ Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/cmake-build-debug/matplotplusplus/source/matplot/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/main.cpp">
 			<Option target="semana6"/>
 		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/include/nodesoup.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/algebra.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/algebra.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/fruchterman_reingold.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/fruchterman_reingold.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/kamada_kawai.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/kamada_kawai.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/layout.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/layout.hpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/nodesoup/src/nodesoup.cpp">
+			<Option target="nodesoup"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/bars.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/bars.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/box_chart.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/box_chart.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/circles.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/circles.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/contours.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/contours.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/error_bar.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/error_bar.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/filled_area.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/filled_area.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/function_line.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/function_line.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/histogram.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/histogram.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/labels.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/labels.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/line.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/line.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/matrix.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/matrix.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/network.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/network.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/parallel_lines.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/parallel_lines.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/stair.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/stair.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/string_function.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/string_function.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/surface.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/surface.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/vectors.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/axes_objects/vectors.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/backend/backend_interface.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/backend/backend_interface.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/backend/backend_registry.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/backend/backend_registry.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/backend/gnuplot.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/backend/gnuplot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/axes_object.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/axes_object.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/axes_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/axes_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/axis_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/axis_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/figure_registry.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/figure_registry.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/figure_type.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/figure_type.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/legend.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/legend.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/line_spec.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/core/line_spec.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/freestanding/axes_functions.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/freestanding/axes_functions.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/freestanding/axes_lim.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/freestanding/histcounts.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/freestanding/histcounts.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/freestanding/plot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/matplot.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/colors.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/colors.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/common.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/common.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/concepts.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/contourc.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/contourc.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/geodata.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/handle_types.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/keywords.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/popen.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/type_traits.h">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/world_cities.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/world_map_10m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/world_map_110m.cpp">
+			<Option target="matplot"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/util/world_map_50m.cpp">
+			<Option target="matplot"/>
+		</Unit>
 		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/cmake/CPM.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/cmake/FindFFTW.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/cmake/FindFilesystem.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/cmake/FindOpenCV.cmake">
+			<Option virtualFolder="CMake Files\matplotplusplus\cmake\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\source\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/3rd_party/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\source\3rd_party\"/>
+		</Unit>
+		<Unit filename="/media/adriano/DATA/Google Drive/Mestrado/UFOP/2020/PCC104/lista/semana6/matplotplusplus/source/matplot/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matplotplusplus\source\matplot\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

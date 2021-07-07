@@ -539,17 +539,17 @@ int main() {
     // 1d) Implemente um algoritmo para o problema do troco (Change-making problem(Seção 8.1)
 
 
-    std::vector<int> array_valor_moeda = {1, 2, 4};
-    int qtidade_moeda = 6;
-
-    std::cout << "Algoritmo para o problema do troco, com programação dinamica" << endl;
-    std::cout << endl;
-    std::cout << "Numero mim de moedas PD: " << change_MakingPD(qtidade_moeda, array_valor_moeda) << "\n";
-
-
-    std::cout << "Numero mim de moedas Recursivo: "
-              << change_MakingR(array_valor_moeda, array_valor_moeda.size(), qtidade_moeda) << "\n";
-
+//    std::vector<int> array_valor_moeda = {1, 2, 4};
+//    int qtidade_moeda = 6;
+//
+//    std::cout << "Algoritmo para o problema do troco" << endl;
+//    std::cout << endl;
+//    std::cout << "Numero min de moedas PD: " << change_MakingPD(qtidade_moeda, array_valor_moeda) << "\n";
+//
+//
+//    std::cout << "Numero mim de moedas Recursivo: "
+//              << change_MakingR(array_valor_moeda, array_valor_moeda.size(), qtidade_moeda) << "\n";
+//
 
 
 

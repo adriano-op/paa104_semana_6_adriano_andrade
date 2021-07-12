@@ -2,12 +2,9 @@
 #include <vector>
 #include <climits>
 #include <algorithm>
-#include <fstream>  // ifstream
-#include <sstream>  // stringstream
+#include <fstream>
 #include <iomanip>  // setw
 #include <string>
-#include<math.h>
-#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -285,28 +282,28 @@ int change_MakingPD(int qtidade_moeda, std::vector<int> valor_moeda) {
     return temp[qtidade_moeda];
 }
 
-int change_MakingR(std::vector<int> array_valor_moeda, int tamVetor, int qtidade_moeda) {
+int change_MakingR(std::vector<int> array_valor_moeda, int tamVetorValorMoeda, int numTrocoRequerido) {
     //caso base
-    if (qtidade_moeda == 0) {
+    if (numTrocoRequerido == 0) {
         return 0;
     }
 
-    if (qtidade_moeda < 0) {
+    if (numTrocoRequerido < 0) {
         return INT_MAX;
     }
 
 // inicializa o número mínimo de moedas necessárias ao infinito
     int num_coins = INT_MAX;
 
-    for (int i = 0; i < tamVetor; i++) {
+    for (int i = 0; i < tamVetorValorMoeda; i++) {
         // volte a verificar se o total pode ser alcançado incluindo
         // moeda atual `array_valor_moeda [i]`
-        int result = change_MakingR(array_valor_moeda, tamVetor, qtidade_moeda - array_valor_moeda[i]);
+        int result = change_MakingR(array_valor_moeda, tamVetorValorMoeda, numTrocoRequerido - array_valor_moeda[i]);
 
         // atualiza o número mínimo de moedas necessárias se escolher o atual
         // moeda resultou em uma solução
         if (result != INT_MAX) {
-            num_coins = min(num_coins, result )+1;
+            num_coins = min(num_coins, result +1);
         }
     }
    return num_coins;
@@ -389,7 +386,7 @@ int MFKnapsack(int i, int j) {
 
 
 int coinCollectionPD(int n, int m, std::vector<std::vector<int>> &C) {
-    int F[n][m];
+    std::vector<std::vector<int>>F;
     F[0][0] = C[0][0];
     F[1][1] = C[1][1];
     for (int k = 2; k < m; k++) {
@@ -417,36 +414,36 @@ int coinCollectingRecursivo(int i, int j, std::vector<std::vector<int>> &C) {
     }
 }
 
-int coinCollectingITERATIVO(int m, int n, std::vector<std::vector<int>> &a) {
-    int c[m][n];
-    if (m == 0 && n == 0) {
-        return a[m][n];
-    }
-    c[0][0] = a[0][0];
-
-    for (int i = 1; i < m; i++) {
-        c[i][0] = c[i - 1][0] + a[i][0];
-    }
-    for (int j = 1; j < n; j++) {
-        c[0][j] = c[0][j - 1] + a[0][j];
-    }
-
-    for (int i = 1; i < m; i++) {
-        for (int j = 1; j < n; j++) {
-            c[i][j] = max(c[i - 1][j], c[i][j - 1]) + a[i][j];
-        }
-    }
-
-    std::cout << "Tabuleiro CoinCollecting Iterativo: " << endl;
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++)
-            std::cout << c[i][j] << " ";
-        std::cout << endl;
-    }
-    std::cout << "Num coins: ";
-
-    return c[m - 1][n - 1];
-}
+//int coinCollectingITERATIVO(int m, int n, std::vector<std::vector<int>> &a) {
+//    int c[m][n];
+//    if (m == 0 && n == 0) {
+//        return a[m][n];
+//    }
+//    c[0][0] = a[0][0];
+//
+//    for (int i = 1; i < m; i++) {
+//        c[i][0] = c[i - 1][0] + a[i][0];
+//    }
+//    for (int j = 1; j < n; j++) {
+//        c[0][j] = c[0][j - 1] + a[0][j];
+//    }
+//
+//    for (int i = 1; i < m; i++) {
+//        for (int j = 1; j < n; j++) {
+//            c[i][j] = max(c[i - 1][j], c[i][j - 1]) + a[i][j];
+//        }
+//    }
+//
+//    std::cout << "Tabuleiro CoinCollecting Iterativo: " << endl;
+//    for (int i = 0; i < m; i++) {
+//        for (int j = 0; j < n; j++)
+//            std::cout << c[i][j] << " ";
+//        std::cout << endl;
+//    }
+//    std::cout << "Num coins: ";
+//
+//    return c[m - 1][n - 1];
+//}
 
 std::vector<int> inicializaVectorRandom(int t) {
     unsigned seed = time(0);
@@ -510,7 +507,7 @@ int main() {
 
 //---------------------------------------------------------------------------------------------------------------------
 
-//    //1 c)  Implemente  um  algoritmo  para  o  cálculo  do qtidade_moeda-éesimo  número  de  Fibonacci  com  utilizar programação dinâmica.
+//    //1 c)  Implemente  um  algoritmo  para  o  cálculo  do numMoedaTroco-éesimo  número  de  Fibonacci  com  utilizar programação dinâmica.
 
 //    std::cout << "  ------------------- Algoritmo de Fibonacci Bottom Up ------------------- " << std::endl;
 //    int num_Fibonacci = 6;
@@ -538,18 +535,18 @@ int main() {
 //-----------------------------------------------------------------------------------------------------------------
     // 1d) Implemente um algoritmo para o problema do troco (Change-making problem(Seção 8.1)
 
-
+//
 //    std::vector<int> array_valor_moeda = {1, 2, 4};
-//    int qtidade_moeda = 6;
+//    int numMoedaTroco = 6;
 //
 //    std::cout << "Algoritmo para o problema do troco" << endl;
 //    std::cout << endl;
-//    std::cout << "Numero min de moedas PD: " << change_MakingPD(qtidade_moeda, array_valor_moeda) << "\n";
+//    std::cout << "Numero min de moedas PD: " << change_MakingPD(numMoedaTroco, array_valor_moeda) << "\n";
 //
-//
+////A complexidade de tempo é exponencial, pois está facendo cada chamada recursiva
 //    std::cout << "Numero mim de moedas Recursivo: "
-//              << change_MakingR(array_valor_moeda, array_valor_moeda.size(), qtidade_moeda) << "\n";
-//
+//              << change_MakingR(array_valor_moeda, array_valor_moeda.size(), numMoedaTroco) << "\n";
+
 
 
 
@@ -603,17 +600,12 @@ int main() {
 //
 //    std::cout << "CoinCollecting  Recursivo: " << coinCollectingRecursivo(a.size() - 1, a[0].size() - 1, a);
 //
-//    std::cout << endl;
-//    std::cout << endl;
-//   // std::cout << "Tabuleiro CoinCollecting Iterativo: " << endl;
-//    std::cout << coinCollectingITERATIVO(a.size(), a[0].size(), a);
-//    std::cout << endl;
 
 
 //-----------------------------------------------------------------------------------------------------------------
 ////     1 g) Implemente o algoritmo baseado em função de memória (memory function) para solução do problema da mochila (knapsack problem).
 ////     F -> armazena os valores
-////     Variáveis globais peso[1..qtidade_moeda], Value[1..qtidade_moeda],
+////     Variáveis globais peso[1..n], Value[1..n],
 
     //inicializa a matriz com -1.
     //    for (int i = 1; i < F.size(); i++)
@@ -626,7 +618,7 @@ int main() {
     // PDF
 
 // ----------------------------------------------------------------------------------------------------------------------
-    ////2 (b)  Implemente um algoritmo baseado em backtracking para a a resolução do problema das qtidade_moeda-rainhas.
+    ////2 (b)  Implemente um algoritmo baseado em backtracking para a a resolução do problema das numMoedaTroco-rainhas.
 //
 //        int tamanho_quadro=8;  //   tamanho do tabuleiro (NxN) ";
 //        std::vector<std::vector<int>> quadro(tamanho_quadro, std::vector<int>(tamanho_quadro));
@@ -639,11 +631,8 @@ int main() {
 //        std::cout << "Disposição: " << endl;
 //
 //        //imprimir a  matrix
-//        for (int i = 0; i < tamanho_quadro; i++) {
-//            for (int j = 0; j < tamanho_quadro; j++)
-//                std::cout << quadro[i][j] << " ";
-//            std::cout << endl;
-//        }
+//    printmatriz(quadro);
+
 // ---------------------------------------------------------------------------------------------------------------------
     //// 2 c)  Implemente  um  algoritmo  baseado  em  backtracking  para  a  a  resolucão  do  problema  decoloração de grafos com m cores.
 
